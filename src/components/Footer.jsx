@@ -1,4 +1,6 @@
-export default function Footer({ t }) {
+import { memo } from "react";
+
+export default memo(function Footer({ t }) {
   const links = [
     ["#services", t.nav.services],
     ["#works", t.nav.works],
@@ -18,7 +20,7 @@ export default function Footer({ t }) {
               <small>Software Studio</small>
             </span>
           </a>
-          <p>{t.footer.description}</p>
+          <p className="mt-4">{t.footer.description}</p>
         </div>
 
         <div>
@@ -54,4 +56,4 @@ export default function Footer({ t }) {
       </div>
     </footer>
   );
-}
+});

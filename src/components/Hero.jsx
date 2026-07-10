@@ -7,9 +7,9 @@ const heroTags = ["Strategy", "Interface", "Code", "Launch"];
 export default function Hero({ t }) {
   return (
     <section id="top" className="section hero">
+      <LaloInteractiveLogo />
+      
       <div className="section-inner hero-inner">
-        <LaloInteractiveLogo />
-
         <motion.div
           className="hero-copy"
           initial={{ opacity: 0, y: 34 }}

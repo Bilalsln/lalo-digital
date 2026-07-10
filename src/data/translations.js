@@ -155,22 +155,22 @@ export const translations = {
       items: [
         {
           title: "Başlangıç Web Sitesi",
-          price: "1.500 TL'den başlayan",
+          price: "2.000 TL'den başlayan",
           features: ["Tek sayfa yapı", "Mobil uyum", "Temel SEO", "Hızlı teslim"]
         },
         {
           title: "Kurumsal Web Sitesi",
-          price: "3.500 TL'den başlayan",
+          price: "4.500 TL'den başlayan",
           features: ["Çoklu sayfa", "Kurumsal arayüz", "İletişim akışı", "Performans optimizasyonu"]
         },
         {
           title: "Katalog / Menü Sistemi",
-          price: "5.000 TL'den başlayan",
+          price: "6.000 TL'den başlayan",
           features: ["Ürün veya menü yapısı", "Filtreleme", "Yönetilebilir içerik", "QR uyumlu deneyim"]
         },
         {
           title: "Mobil Uygulama Başlangıç",
-          price: "8.000 TL'den başlayan",
+          price: "10.000 TL'den başlayan",
           features: ["Mobil arayüz", "Temel uygulama akışları", "Prototip", "Yayın hazırlığı"]
         },
         {
@@ -388,22 +388,22 @@ export const translations = {
       items: [
         {
           title: "Starter Website",
-          price: "From 1,500 TL",
+          price: "From $45",
           features: ["Single-page structure", "Responsive design", "Basic SEO", "Fast delivery"]
         },
         {
           title: "Business Website",
-          price: "From 3,500 TL",
+          price: "From $95",
           features: ["Multi-page structure", "Corporate interface", "Contact flow", "Performance optimization"]
         },
         {
           title: "Catalog / Menu System",
-          price: "From 5,000 TL",
+          price: "From $129",
           features: ["Product or menu structure", "Filtering", "Manageable content", "QR-friendly experience"]
         },
         {
           title: "Starter Mobile App",
-          price: "From 8,000 TL",
+          price: "From $215",
           features: ["Mobile interface", "Core app flows", "Prototype", "Launch preparation"]
         },
         {

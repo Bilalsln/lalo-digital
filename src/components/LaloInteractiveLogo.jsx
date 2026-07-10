@@ -1,4 +1,4 @@
-import { useEffect, useId } from "react";
+import { memo, useCallback, useEffect, useId } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 const pieces = [
@@ -40,7 +40,7 @@ const floatingPieces = [
   ["float-e", 51, 10]
 ];
 
-export default function LaloInteractiveLogo() {
+export default memo(function LaloInteractiveLogo() {
   const clipId = `laloClip${useId().replaceAll(":", "")}`;
   const rawX = useMotionValue(640);
   const rawY = useMotionValue(210);
@@ -72,7 +72,7 @@ export default function LaloInteractiveLogo() {
     return () => window.clearInterval(loop);
   }, [rawRadius, rawX, rawY]);
 
-  const handlePointerMove = (event) => {
+  const handlePointerMove = useCallback((event) => {
     const rect = event.currentTarget.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
@@ -82,13 +82,13 @@ export default function LaloInteractiveLogo() {
     rawRadius.set(Math.min(Math.max(rect.width * 0.17, 150), 260));
     rawTiltX.set((y / rect.height - 0.5) * -4);
     rawTiltY.set((x / rect.width - 0.5) * 5);
-  };
+  }, [rawX, rawY, rawRadius, rawTiltX, rawTiltY]);
 
-  const handlePointerLeave = () => {
+  const handlePointerLeave = useCallback(() => {
     rawRadius.set(0);
     rawTiltX.set(0);
     rawTiltY.set(0);
-  };
+  }, [rawRadius, rawTiltX, rawTiltY]);
 
   return (
     <motion.div
@@ -250,4 +250,4 @@ export default function LaloInteractiveLogo() {
       </motion.div>
     </motion.div>
   );
-}
+});

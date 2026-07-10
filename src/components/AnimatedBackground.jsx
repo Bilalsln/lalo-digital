@@ -1,4 +1,6 @@
-export default function AnimatedBackground() {
+import { memo } from "react";
+
+export default memo(function AnimatedBackground() {
   return (
     <div className="bg-canvas" aria-hidden="true">
       <div className="bg-glow purple" />
@@ -7,4 +9,4 @@ export default function AnimatedBackground() {
       <div className="bg-glow blue" />
     </div>
   );
-}
+});

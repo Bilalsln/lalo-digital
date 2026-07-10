@@ -1,8 +1,15 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Check } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
-export default function Pricing({ t }) {
+const handleMouseMove = (event) => {
+  const rect = event.currentTarget.getBoundingClientRect();
+  event.currentTarget.style.setProperty("--x", `${event.clientX - rect.left}px`);
+  event.currentTarget.style.setProperty("--y", `${event.clientY - rect.top}px`);
+};
+
+export default memo(function Pricing({ t }) {
   return (
     <section id="pricing" className="section section-motion">
       <div className="section-inner">
@@ -18,11 +25,7 @@ export default function Pricing({ t }) {
               whileHover={{ y: -8, scale: 1.012 }}
               viewport={{ once: true, margin: "-70px" }}
               transition={{ duration: 0.62, delay: index * 0.055, ease: [0.16, 1, 0.3, 1] }}
-              onMouseMove={(event) => {
-                const rect = event.currentTarget.getBoundingClientRect();
-                event.currentTarget.style.setProperty("--x", `${event.clientX - rect.left}px`);
-                event.currentTarget.style.setProperty("--y", `${event.clientY - rect.top}px`);
-              }}
+              onMouseMove={handleMouseMove}
             >
               <h3>{item.title}</h3>
               <strong className="price">{item.price}</strong>
@@ -56,4 +59,4 @@ export default function Pricing({ t }) {
       </div>
     </section>
   );
-}
+});

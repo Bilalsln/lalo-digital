@@ -1,8 +1,15 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
-export default function Works({ t }) {
+const handleMouseMove = (event) => {
+  const rect = event.currentTarget.getBoundingClientRect();
+  event.currentTarget.style.setProperty("--x", `${event.clientX - rect.left}px`);
+  event.currentTarget.style.setProperty("--y", `${event.clientY - rect.top}px`);
+};
+
+export default memo(function Works({ t }) {
   return (
     <section id="works" className="section section-motion">
       <div className="section-inner">
@@ -18,11 +25,7 @@ export default function Works({ t }) {
               whileHover={{ y: -10, scale: 1.01 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.72, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
-              onMouseMove={(event) => {
-                const rect = event.currentTarget.getBoundingClientRect();
-                event.currentTarget.style.setProperty("--x", `${event.clientX - rect.left}px`);
-                event.currentTarget.style.setProperty("--y", `${event.clientY - rect.top}px`);
-              }}
+              onMouseMove={handleMouseMove}
             >
               <div className={`project-visual visual-${index + 1}`}>
                 <span className="project-index">{String(index + 1).padStart(2, "0")}</span>
@@ -52,4 +55,4 @@ export default function Works({ t }) {
       </div>
     </section>
   );
-}
+});

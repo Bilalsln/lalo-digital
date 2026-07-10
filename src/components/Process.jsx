@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 
-export default function Process({ t }) {
+export default memo(function Process({ t }) {
   return (
     <section id="process" className="section section-motion">
       <div className="section-inner">
@@ -29,4 +30,4 @@ export default function Process({ t }) {
       </div>
     </section>
   );
-}
+});

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useCallback, lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -16,7 +16,7 @@ import { translations } from '../data/translations';
 
 export default function App() {
   const [language, setLanguage] = useState("tr");
-  const t = translations[language];
+  const t = useMemo(() => translations[language], [language]);
 
   useEffect(() => {
     document.documentElement.lang = language;

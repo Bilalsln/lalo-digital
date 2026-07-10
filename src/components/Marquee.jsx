@@ -1,4 +1,6 @@
-export default function Marquee({ t }) {
+import { memo } from "react";
+
+export default memo(function Marquee({ t }) {
   const text = `${t.marquee} • `;
 
   return (
@@ -10,4 +12,4 @@ export default function Marquee({ t }) {
       </div>
     </section>
   );
-}
+});

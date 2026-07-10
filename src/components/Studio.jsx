@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 
-export default function Studio({ t }) {
+export default memo(function Studio({ t }) {
   return (
     <section id="studio" className="studio-band">
       <motion.div
@@ -45,4 +46,4 @@ export default function Studio({ t }) {
       </motion.p>
     </section>
   );
-}
+});

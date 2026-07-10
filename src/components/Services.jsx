@@ -1,3 +1,4 @@
+import { memo, useCallback } from "react";
 import { motion } from "framer-motion";
 import {
   Code2,
@@ -11,7 +12,13 @@ import SectionHeader from "./SectionHeader";
 
 const icons = [Code2, Smartphone, PenTool, ShoppingBag, MousePointerClick, LifeBuoy];
 
-export default function Services({ t }) {
+const handleMouseMove = (event) => {
+  const rect = event.currentTarget.getBoundingClientRect();
+  event.currentTarget.style.setProperty("--x", `${event.clientX - rect.left}px`);
+  event.currentTarget.style.setProperty("--y", `${event.clientY - rect.top}px`);
+};
+
+export default memo(function Services({ t }) {
   return (
     <section id="services" className="section section-motion">
       <div className="section-inner">
@@ -30,11 +37,7 @@ export default function Services({ t }) {
                 whileHover={{ y: -8, rotate: index % 2 ? 0.6 : -0.6 }}
                 viewport={{ once: true, margin: "-70px" }}
                 transition={{ duration: 0.66, delay: index * 0.055, ease: [0.16, 1, 0.3, 1] }}
-                onMouseMove={(event) => {
-                  const rect = event.currentTarget.getBoundingClientRect();
-                  event.currentTarget.style.setProperty("--x", `${event.clientX - rect.left}px`);
-                  event.currentTarget.style.setProperty("--y", `${event.clientY - rect.top}px`);
-                }}
+                onMouseMove={handleMouseMove}
               >
                 <div className="icon-bubble">
                   <Icon size={24} />
@@ -48,4 +51,4 @@ export default function Services({ t }) {
       </div>
     </section>
   );
-}
+});

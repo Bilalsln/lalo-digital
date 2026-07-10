@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 
 function EmphasizedTitle({ children }) {
@@ -10,7 +11,7 @@ function EmphasizedTitle({ children }) {
   );
 }
 
-export default function SectionHeader({ kicker, title, copy }) {
+export default memo(function SectionHeader({ kicker, title, copy }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 36, filter: "blur(10px)" }}
@@ -25,4 +26,4 @@ export default function SectionHeader({ kicker, title, copy }) {
       {copy && <p className="section-copy">{copy}</p>}
     </motion.div>
   );
-}
+});
