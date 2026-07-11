@@ -888,7 +888,6 @@ a {
 }
 
 .marquee span {
-  padding: 0 28px;
   color: transparent;
   background: linear-gradient(90deg, #f7fff2 0%, #9eff6e 28%, #7de7ff 58%, #d7c8ff 100%);
   -webkit-background-clip: text;

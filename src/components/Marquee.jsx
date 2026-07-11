@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 export default memo(function Marquee({ t }) {
-  const text = `${t.marquee}  `;
+  const text = `${t.marquee} • `;
 
   return (
     <section className="marquee" aria-label="Studio capabilities">
