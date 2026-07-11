@@ -10,7 +10,7 @@ export const translations = {
       cta: "Teklif Al"
     },
     hero: {
-      title: "Web siteleri ve mobil uygulamalarla markanızı dijitalde öne çıkarıyoruz.",
+      title: "Web siteleri ve mobil uygulamalarla markanızı dijitalde öne çıkarıyoruz",
       subtitle:
         "LALO Digital, işletmeler ve girişimler için modern web siteleri, mobil uygulamalar ve etkileyici dijital deneyimler geliştirir.",
       primary: "Teklif Al",
@@ -25,7 +25,7 @@ export const translations = {
       "Web Geliştirme • Mobil Uygulamalar • UI/UX • E-Ticaret • Dijital Ürünler • Yaratıcı Stüdyo",
     services: {
       kicker: "Hizmetler",
-      title: "Markanız için hızlı, şık ve ölçeklenebilir dijital ürünler.",
+      title: "Markanız için hızlı, şık ve ölçeklenebilir dijital ürünler",
       copy:
         "Landing page'den mobil uygulamaya, katalog sisteminden özel yazılıma kadar tüm dijital yüzeyleri aynı estetik ve teknik kaliteyle tasarlarız.",
       items: [
@@ -63,10 +63,10 @@ export const translations = {
     },
     works: {
       kicker: "Projeler",
-      title: "Gerçek markalar için tasarlanmış gibi hissettiren demo işler.",
+      title: "Gerçek markalar için tasarlanmış gibi hissettiren demo işler",
       copy:
         "Her proje kartı, LALO Digital'in farklı sektörlere nasıl estetik, hızlı ve işlevsel dijital deneyimler sunabileceğini gösterir.",
-      view: "Projeyi Gör",
+      view: "Yakında",
       items: [
         {
           title: "Cafe Website",
@@ -108,13 +108,13 @@ export const translations = {
     },
     studio: {
       kicker: "Stüdyo",
-      statement: "Fikirleri piksele, pikseli çalışan dijital ürünlere dönüştürüyoruz.",
+      statement: "Fikirleri piksele, pikseli çalışan dijital ürünlere dönüştürüyoruz",
       copy:
         "LALO Digital, markaların dijital dünyada daha güçlü görünmesi için web siteleri, mobil uygulamalar ve kullanıcı odaklı dijital çözümler geliştirir. Fikirden yayına kadar modern, hızlı ve estetik ürünler üretiriz."
     },
     process: {
       kicker: "Süreç",
-      title: "Net, yaratıcı ve kontrollü bir üretim akışı.",
+      title: "Net, yaratıcı ve kontrollü bir üretim akışı",
       copy:
         "Projeyi sadece tasarlayıp teslim etmeyiz. İhtiyacı anlar, doğru sistemi kurar, yayına alır ve geliştirmeye devam ederiz.",
       steps: [
@@ -147,7 +147,7 @@ export const translations = {
     },
     pricing: {
       kicker: "Paketler",
-      title: "Başlangıç için net, büyüme için esnek paketler.",
+      title: "Başlangıç için net, büyüme için esnek paketler",
       copy:
         "Her paket proje kapsamına göre şekillenir. Aşağıdaki fiyatlar başlangıç seviyesini gösterir.",
       note: "Fiyatlar proje detayına göre değişiklik gösterebilir.",
@@ -182,7 +182,7 @@ export const translations = {
     },
     faq: {
       kicker: "FAQ",
-      title: "Başlamadan önce merak edilenler.",
+      title: "Başlamadan önce merak edilenler",
       items: [
         {
           question: "Bir web sitesi ne kadar sürede tamamlanır?",
@@ -218,7 +218,7 @@ export const translations = {
     },
     contact: {
       kicker: "İletişim",
-      title: "Projenize dijital bir başlangıç yapalım.",
+      title: "Projenize dijital bir başlangıç yapalım",
       copy:
         "Yeni bir web sitesi, mobil uygulama veya dijital ürün fikriniz varsa LALO Digital ile net, yaratıcı ve uygulanabilir bir başlangıç yapabilirsiniz.",
       whatsapp: "WhatsApp",
@@ -254,7 +254,7 @@ export const translations = {
       cta: "Get a Quote"
     },
     hero: {
-      title: "We make your brand stand out with websites and mobile apps.",
+      title: "We make your brand stand out with websites and mobile apps",
       subtitle:
         "LALO Digital builds modern websites, mobile applications, and digital experiences for businesses and startups.",
       primary: "Get a Quote",
@@ -268,7 +268,7 @@ export const translations = {
     marquee: "Web Development • Mobile Apps • UI/UX • E-Commerce • Digital Products • Creative Studio",
     services: {
       kicker: "Services",
-      title: "Fast, refined, and scalable digital products for your brand.",
+      title: "Fast, refined, and scalable digital products for your brand",
       copy:
         "From landing pages to mobile apps, catalog systems to custom software, we design every digital surface with the same visual and technical quality.",
       items: [
@@ -303,10 +303,10 @@ export const translations = {
     },
     works: {
       kicker: "Works",
-      title: "Demo work that feels designed for real brands.",
+      title: "Demo work that feels designed for real brands",
       copy:
         "Each project card shows how LALO Digital can deliver aesthetic, fast, and functional digital experiences across different sectors.",
-      view: "View Project",
+      view: "Coming Soon",
       items: [
         {
           title: "Cafe Website",
@@ -347,13 +347,13 @@ export const translations = {
     },
     studio: {
       kicker: "Studio",
-      statement: "We turn ideas into pixels, and pixels into working digital products.",
+      statement: "We turn ideas into pixels, and pixels into working digital products",
       copy:
         "LALO Digital creates websites, mobile apps, and user-focused digital solutions that help brands look stronger in the digital world. From idea to launch, we build modern, fast, and refined products."
     },
     process: {
       kicker: "Process",
-      title: "A clear, creative, and controlled production flow.",
+      title: "A clear, creative, and controlled production flow",
       copy:
         "We do not simply design and deliver. We understand the need, build the right system, launch it, and keep improving it.",
       steps: [
@@ -381,7 +381,7 @@ export const translations = {
     },
     pricing: {
       kicker: "Pricing",
-      title: "Clear packages to start, flexible scope to grow.",
+      title: "Clear packages to start, flexible scope to grow",
       copy: "Every package is shaped around project scope. The prices below indicate starting points.",
       note: "Prices may vary depending on project requirements.",
       cta: "Get a Quote",
@@ -415,7 +415,7 @@ export const translations = {
     },
     faq: {
       kicker: "FAQ",
-      title: "Useful answers before we start.",
+      title: "Useful answers before we start",
       items: [
         {
           question: "How long does a website take?",
@@ -451,7 +451,7 @@ export const translations = {
     },
     contact: {
       kicker: "Contact",
-      title: "Let's give your project a digital start.",
+      title: "Let's give your project a digital start",
       copy:
         "If you have a new website, mobile app, or digital product idea, LALO Digital can help you start with clarity, creativity, and execution.",
       whatsapp: "WhatsApp",

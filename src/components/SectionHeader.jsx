@@ -6,7 +6,7 @@ function EmphasizedTitle({ children }) {
 
   return (
     <>
-      {words.slice(0, -2).join(" ")} <span>{words.slice(-2).join(" ")}</span>
+      {words.slice(0, -3).join(" ")} <span>{words.slice(-3).join(" ")}</span>
     </>
   );
 }

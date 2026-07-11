@@ -16,7 +16,13 @@ export default function Hero({ t }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.26, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h1>{t.hero.title}</h1>
+          <h1>
+            {t.hero.title.split(" ").map((word, i) => (
+              <span key={`${word}-${i}`} className={i % 3 === 1 ? "gradient-text" : ""}>
+                {word}{" "}
+              </span>
+            ))}
+          </h1>
           <p>{t.hero.subtitle}</p>
 
           <div className="hero-actions">

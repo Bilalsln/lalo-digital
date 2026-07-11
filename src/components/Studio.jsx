@@ -24,7 +24,7 @@ export default memo(function Studio({ t }) {
         {t.studio.statement.split(" ").map((word, index) => (
           <motion.span
             key={`${word}-${index}`}
-            className={index % 5 === 0 ? "gradient-text" : ""}
+            className={index % 3 === 0 ? "gradient-text" : ""}
             initial={{ opacity: 0, y: 28, rotate: index % 2 ? 3 : -3 }}
             whileInView={{ opacity: 1, y: 0, rotate: 0 }}
             viewport={{ once: true }}
