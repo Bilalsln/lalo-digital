@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 export default function Contact({ t }) {
@@ -46,26 +46,13 @@ export default function Contact({ t }) {
             <p>{t.contact.copy}</p>
 
             <div className="contact-actions">
-              <a
-                className="btn btn-primary"
-                href="https://wa.me/6283176832131"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <MessageCircle size={18} />
-                {t.contact.whatsapp}
-              </a>
-              <a className="btn btn-secondary" href="mailto:lalodigital.contact@gmail.com">
+              <a className="btn btn-primary" href="mailto:lalodigital.contact@gmail.com">
                 <Mail size={18} />
                 {t.contact.email}
               </a>
             </div>
 
             <div className="contact-methods" aria-label="Direct contact options">
-              <a href="https://wa.me/6283176832131" target="_blank" rel="noreferrer">
-                <strong>{t.contact.whatsapp}</strong>
-                <small>+62 831-7683-2131</small>
-              </a>
               <a href="mailto:lalodigital.contact@gmail.com">
                 <strong>{t.contact.email}</strong>
                 <small>lalodigital.contact@gmail.com</small>

@@ -221,7 +221,6 @@ export const translations = {
       title: "Projenize dijital bir başlangıç yapalım",
       copy:
         "Yeni bir web sitesi, mobil uygulama veya dijital ürün fikriniz varsa LALO Digital ile net, yaratıcı ve uygulanabilir bir başlangıç yapabilirsiniz.",
-      whatsapp: "WhatsApp",
       email: "E-posta",
       form: {
         name: "Ad Soyad",
@@ -454,7 +453,6 @@ export const translations = {
       title: "Let's give your project a digital start",
       copy:
         "If you have a new website, mobile app, or digital product idea, LALO Digital can help you start with clarity, creativity, and execution.",
-      whatsapp: "WhatsApp",
       email: "Email",
       form: {
         name: "Full Name",

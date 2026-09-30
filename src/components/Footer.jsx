@@ -44,9 +44,6 @@ export default memo(function Footer({ t }) {
         <div>
           <h4>{t.footer.contact}</h4>
           <a href="mailto:lalodigital.contact@gmail.com">lalodigital.contact@gmail.com</a>
-          <a href="https://wa.me/6283176832131" target="_blank" rel="noreferrer">
-            WhatsApp
-          </a>
         </div>
       </div>
 
